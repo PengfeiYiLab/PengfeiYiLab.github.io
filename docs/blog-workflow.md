@@ -13,7 +13,9 @@
 npm ci
 ```
 
-本地预览：
+## 2. 本地预览（重点）
+
+日常只看效果，执行这一条就够了：
 
 ```bash
 npm run server
@@ -21,7 +23,21 @@ npm run server
 
 默认地址：`http://localhost:4000`
 
-## 2. 新增文章
+预览草稿（包含 `source/_drafts/`）：
+
+```bash
+npx hexo server --draft
+```
+
+发布前做一次构建检查（和线上构建一致）：
+
+```bash
+npm run build
+```
+
+停止预览：在终端按 `Ctrl + C`。
+
+## 3. 新增文章
 
 ```bash
 npm run new "文章标题"
@@ -42,7 +58,7 @@ categories:
 ---
 ```
 
-## 3. 草稿 -> 发布（可选）
+## 4. 草稿 -> 发布（可选）
 
 创建草稿：
 
@@ -62,13 +78,13 @@ npx hexo server --draft
 npx hexo publish "草稿标题"
 ```
 
-## 4. 修改文章
+## 5. 修改文章
 
 1. 编辑 `source/_posts/` 里的目标文件
 2. 本地预览确认（`npm run server`）
 3. 提交并推送
 
-## 5. 删除文章
+## 6. 删除文章
 
 ```bash
 rm source/_posts/你的文章文件.md
@@ -76,7 +92,7 @@ rm source/_posts/你的文章文件.md
 
 然后提交并推送即可。
 
-## 6. 插入 PNG/JPG/SVG 图片
+## 7. 插入 PNG/JPG/SVG 图片
 
 建议存放路径：
 
@@ -88,7 +104,7 @@ Markdown 引用方式：
 ![示意图](/images/主题/your-image.png)
 ```
 
-## 7. 插入 draw.io 图
+## 8. 插入 draw.io 图
 
 推荐流程：
 
@@ -111,7 +127,7 @@ Markdown 引用方式：
 [下载 draw.io 源文件](/files/xxx.drawio)
 ```
 
-## 8. 分类与标签
+## 9. 分类与标签
 
 在文章 Front Matter 中设置：
 
@@ -152,7 +168,7 @@ type: tags
 ---
 ```
 
-## 9. 预览与发布
+## 10. 预览与发布
 
 本地预览：
 
@@ -178,13 +194,13 @@ git push
 
 `https://pengfeiyilab.github.io`
 
-## 10. 查看线上部署状态
+## 11. 查看线上部署状态
 
 1. 打开仓库 `Actions`
 2. 找到 `Deploy Hexo to GitHub Pages`
 3. 看最新一次是否为绿色成功
 
-## 11. 常用命令速查
+## 12. 常用命令速查
 
 ```bash
 # 新建文章
