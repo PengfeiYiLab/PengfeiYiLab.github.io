@@ -26,6 +26,10 @@ git push
 
 GitHub Actions will build and publish automatically.
 
+## Docs
+
+- [Blog workflow guide](docs/blog-workflow.md)
+
 ## Content/logic separation
 
 - Content: `source/_posts/` and `source/`
