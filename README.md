@@ -29,7 +29,7 @@ GitHub Actions will build and publish automatically.
 ## Docs
 
 - [Blog workflow guide](docs/blog-workflow.md)
-- [本地预览（直接看这节）](docs/blog-workflow.md#2-本地预览重点)
+- [本地预览流程](docs/blog-workflow.md#2-本地预览重点)
 
 ## Content/logic separation
 
